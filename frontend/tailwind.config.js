@@ -9,12 +9,28 @@ export default {
             colors: {
                 brand: {
                     blue: '#2874f0',
+                    darkBlue: '#172337',
                     yellow: '#ffe500',
-                    dark: '#212121',
-                    gray: '#f0f0f0'
+                    orange: '#fb641b',
+                    light: '#f1f3f6',
+                    gray: '#878787'
+                }
+            },
+            animation: {
+                'blob': 'blob 7s infinite',
+                'scroll': 'scroll 40s linear infinite',
+            },
+            keyframes: {
+                blob: {
+                    '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                    '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                    '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                    '100%': { transform: 'translate(0px, 0px) scale(1)' },
                 },
-                primary: '#2874f0',
-                secondary: '#fb641b',
+                scroll: {
+                    '0%': { transform: 'translateX(0)' },
+                    '100%': { transform: 'translateX(-100%)' },
+                }
             }
         },
     },
